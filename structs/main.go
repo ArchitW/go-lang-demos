@@ -1,8 +1,14 @@
 package main
 
 import "fmt"
-
+//go is pass-by value.
 //more of less like object in JS or Dicts in Python
+/*
+
+value types: int, float, string,bool, struct
+reference types: slice, map, channel, pointer, functions
+
+ */
 type contactInfo struct {
 	email   string
 	zipCode int
