@@ -19,7 +19,7 @@ func newDeck() deck {
 
 	cardSuites := []string{"Spades", "Hearts", "Diamonds", "Clubs"}
 	cardValues := []string{"Ace", "King", "Queen", "Jack",
-		"One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"}
+		 "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"}
 
 	for _, suit := range cardSuites {
 		for _, value := range cardValues {
@@ -30,6 +30,7 @@ func newDeck() deck {
 	return cards
 }
 
+//Receiver Function
 // (d deck) receiver of type deck ([]string)
 //any variable of type deck now get access to the print method.
 //d ? instance of deck variable
