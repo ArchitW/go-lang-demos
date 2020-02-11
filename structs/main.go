@@ -60,6 +60,21 @@ func (pointerToPerson *person) updateName(fName string) {
 	(*pointerToPerson).firstName = fName
 }
 
+/* careful with slices as it is pass by value
+
+main{
+	mySlice := []string{"hi","there","how","are","you"}
+	updteSlice(mySlice)
+	fmt.Println(mySlice)
+}
+
+func updteSlice(s []string){
+s[0] = "by"
+}
+
+This will change mySlice
+ */
+
 /*
 
 
